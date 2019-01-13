@@ -1,0 +1,12 @@
+.Hero {
+  display: block;
+  height: 33.375rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--home {
+    background-image: url('/../img/home.jpg');
+  }
+}
