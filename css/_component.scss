@@ -1,4 +1,37 @@
-.Hero {
+// !compileOnSave
+
+// ------------------------------------
+// page top navigation
+//
+
+.f-TopNav {
+  background-color: $color-dark;
+}
+
+.f-TopNav-name {
+  margin: 1rem 0;
+
+  color: $color-light;
+  font-family: $font-family-headline;
+  font-size: map-get($font-size-map, size4);
+  text-transform: uppercase;
+}
+
+.f-TopNav-item {
+  padding: 1.43em; // 20px
+  color: $color-light;
+  font-family: $font-family-body;
+  font-size: map-get($font-size-map, size1);
+  letter-spacing: 2;
+  text-transform: uppercase;
+}
+
+
+// ------------------------------------
+// Image hero
+//
+
+.f-Hero {
   display: block;
   height: 33.375rem;
 
@@ -9,4 +42,58 @@
   &--home {
     background-image: url('/../img/home.jpg');
   }
+}
+
+
+// ------------------------------------
+// Upcoming shows
+//
+
+.f-UpcomingShows-headline {
+  @extend %section-headline;
+}
+
+
+// ------------------------------------
+// Music
+//
+
+.f-Music-headline {
+  @extend %section-headline;
+}
+
+
+// ------------------------------------
+// Gallery
+//
+
+.f-Gallery {
+  margin-bottom: 2em;
+}
+
+.f-Gallery-headline {
+  @extend %section-headline;
+}
+
+.f-Gallery-img {
+  height: auto;
+  width: 100%;
+}
+
+// @for $i from 1 through 8 {
+//   .f-Gallery-link--#{$i} {
+//     background-image:url('../../img/thumbs/central-market-#{$i}.jpg');
+//   }
+// }
+
+// ------------------------------------
+//
+//
+
+.f-Footer {
+  padding: 2em 0;
+
+  background-color: $color-dark;
+  color: $color-light;
+  font-size: map-get($font-size-map, size2); // 16px
 }
