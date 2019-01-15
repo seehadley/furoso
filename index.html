@@ -1,80 +1,106 @@
 <html>
 
 <head>
-
+  <link href="https://fonts.googleapis.com/css?family=Knewave|Open+Sans:400,700" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/bulma.min.css">
   <link type="text/css" rel="stylesheet" href="css/main.min.css">
-  <link type="text/css" rel="stylesheet" href="css/lightGallery.css" />
+  <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
 </head>
 
 <body>
 
   <header>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar f-TopNav" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item">Furoso</a>
+          <a class="navbar-item f-TopNav-name">Furoso</a>
           <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
-        <div class="navbar-menu">
+        <div class="navbar-menu f-TopNav-menu">
           <div class="navbar-end">
-            <a href="#" class="">Shows</a>
-            <a href="#" class="">Music</a>
-            <a href="#" class="">Gallery</a>
-            <a href="#" class="">Bio</a>
-            <a href="#" class="">Contact</a>
+            <a href="#" class="navbar-item f-TopNav-item">Shows</a>
+            <a href="#" class="navbar-item f-TopNav-item">Music</a>
+            <a href="#" class="navbar-item f-TopNav-item">Gallery</a>
+            <a href="#" class="navbar-item f-TopNav-item">Bio</a>
+            <a href="#" class="navbar-item f-TopNav-item">Contact</a>
           </div>
         </div>
       </div>
     </nav>
   </header>
 
-  <section class="hero Hero Hero--home">
-    <div class="hero-body Hero Hero--home">
+  <section class="hero f-Hero f-Hero--home">
+    <div class="hero-body f-Hero f-Hero--home">
     </div>
   </section>
 
-  <section class="section">
-    <h1 class="level">Upcoming Shows</h1>
-    <div class="level">
-    <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="Furoso" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="false" data-text-color="#000000" data-link-color="#0072BB" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-link-text-color="#fafafa" data-display-lineup="false" data-separator-color=""></a>
-    </div>
-  </section>
-
-  <section class="section">
-    <h1 class="level">Music</h1>
-    <div class="level">
-      <div class="level-item">
-        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/592561137&color=%230072bb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+  <section class="section f-UpcomingShows">
+    <div class="container">
+      <div class="level">
+        <h1 class="level-item f-UpcomingShows-headline has-text-centered">Upcoming Shows</h1>
       </div>
-      <div class="level-item">
-        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/430324367&color=%230072bb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
+      <a class="bit-widget-initializer" data-widget-width="100%" data-artist-name="Furoso" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="false" data-text-color="#000000" data-link-color="#0072BB" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-link-text-color="#fafafa" data-display-lineup="false" data-separator-color=""></a>
+    </div>
+  </section>
+
+  <section class="section f-Music">
+    <div class="container">
+      <div class="level">
+        <h1 class="level-item f-Music-headline has-text-centered">Music</h1>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/592561137&color=%230072bb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>
+        </div>
+        <div class="column">
+          <iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/430324367&color=%230072bb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="content">
-      All content &copy; 2019 Furoso
+  <section class="section f-Gallery">
+    <div class="container">
+      <div class="level">
+        <h1 class="level-item f-Gallery-headline has-text-centered">Gallery</h1>
+      </div>
+      <div class="columns is-centered is-multiline f-Gallery-grid">
+        <a class='column is-one-quarter f-Gallery-link' href="img/central-market-1.jpg"><img class='f-Gallery-img' src="img/thumbs/central-market-1.jpg" alt="Furoso at Central Market"></a>
+        <a class='column is-one-quarter f-Gallery-link' href="img/central-market-2.jpg"><img class='f-Gallery-img' src="img/thumbs/central-market-2.jpg" alt="Furoso at Central Market"></a>
+        <a class='column is-one-quarter f-Gallery-link' href="img/central-market-3.jpg"><img class='f-Gallery-img' src="img/thumbs/central-market-3.jpg" alt="Furoso at Central Market"></a>
+        <a class='column is-one-quarter f-Gallery-link' href="img/central-market-4.jpg"><img class='f-Gallery-img' src="img/thumbs/central-market-4.jpg" alt="Furoso at Central Market"></a>
+        <a class='column is-one-quarter f-Gallery-link' href="img/central-market-5.jpg"><img class='f-Gallery-img' src="img/thumbs/central-market-5.jpg" alt="Furoso at Central Market"></a>
+        <a class='column is-one-quarter f-Gallery-link' href="img/central-market-6.jpg"><img class='f-Gallery-img' src="img/thumbs/central-market-6.jpg" alt="Furoso at Central Market"></a>
+        <a class='column is-one-quarter f-Gallery-link' href="img/central-market-7.jpg"><img class='f-Gallery-img' src="img/thumbs/central-market-7.jpg" alt="Furoso at Central Market"></a>
+        <a class='column is-one-quarter f-Gallery-link' href="img/central-market-8.jpg"><img class='f-Gallery-img' src="img/thumbs/central-market-8.jpg" alt="Furoso at Central Market"></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class='f-Footer'>
+    <div class="container">
+      <div class="level">
+        <div class="level-left">All content &copy; 2019 Furoso</div>
+        <div class="level-right">SOCIAL ICONS WILL GO HERE</div>
+      </div>
     </div>
   </footer>
 </body>
+
 <script src='js/handlebars-v4.0.12.js' type='text/javascript'></script>
 <script src='js/jquery-3.3.1.min.js' type='text/javascript'></script>
 
 <!-- A jQuery plugin that adds cross-browser mouse wheel support.-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 
-<script src="js/lightgallery.min.js"></script>
+<script src="js/lightgallery-all.js" type='text/javascript'></script>
 
-<!-- lightgallery plugins -->
-<script src="js/lg-thumbnail.min.js"></script>
-<script src="js/lg-fullscreen.min.js"></script>
+<script src='js/script.js' type='text/javascript'></script>
+
 </body>
-
-<script src='js/script.js' type='text/javascript'  ></script>
 </html>

@@ -31,4 +31,7 @@ $(".navbar-burger").click(function() {
 
 });
 
+// Photo gallery
+$(".f-Gallery-grid").lightGallery(); 
+
 });
