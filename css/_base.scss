@@ -7,16 +7,18 @@
 // Color
 $color-dark: #030303;
 $color-light: #fafafa;
+$color-accent-dark: #0072BB;
+$color-accent-light: #80ceff;
 
 // Typography
 $font-family-headline: 'Knewave', cursive;
 $font-family-body: 'Open Sans', sans-serif;
 
 $font-size-map: (
-  size1:  0.875rem,
-  size2: 1rem,
-  size3: 1.75rem,
-  size4: 2rem
+  size1:  0.875rem, // 14
+  size2: 1rem, // 16
+  size3: 1.75rem, // 28
+  size4: 2rem // 32
 );
 
 %section-headline {

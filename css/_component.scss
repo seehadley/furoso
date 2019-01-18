@@ -17,6 +17,7 @@
   text-transform: uppercase;
 }
 
+a.f-TopNav-item,
 .f-TopNav-item {
   padding: 1.43em; // 20px
   color: $color-light;
@@ -24,6 +25,11 @@
   font-size: map-get($font-size-map, size1);
   letter-spacing: 2;
   text-transform: uppercase;
+
+  &:hover {
+    background: none;
+    color: $color-accent-light;
+  }
 }
 
 
@@ -91,9 +97,22 @@
 //
 
 .f-Footer {
-  padding: 2em 0;
+  padding: 3em 0;
 
   background-color: $color-dark;
   color: $color-light;
-  font-size: map-get($font-size-map, size2); // 16px
+  font-size: map-get($font-size-map, size1); // 14px
+}
+
+.f-Footer-icon {
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  margin-left: 2em;
+
+  fill: $color-light;
+
+  &:hover {
+    fill: $color-accent-light;
+  }
 }
